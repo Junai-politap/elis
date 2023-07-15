@@ -64,8 +64,8 @@
                                         onerror="this.src='https://bootdey.com/img/Content/avatar/avatar7.png';">
                                 </div>
                                 <div class="col-md-12">
-                                    <input type="file" class="form-control" name="poto"
-                                        value="{{ auth()->user()->poto }}">
+                                    <input type="file" class="form-control" name="foto"
+                                        value="{{ auth()->user()->foto }}">
                                 </div>
                             </div>
                         </div>
@@ -143,7 +143,7 @@
 
                             <div class="form-group">
                                 <label class="control-label">Bidang Keahlian</label>
-                                <input type="text" class="form-control" name="bidang_keahlian	"
+                                <input type="text" class="form-control" name="bidang_keahlian"
                                     value="{{ auth()->user()->bidang_keahlian }}">
                             </div>
 

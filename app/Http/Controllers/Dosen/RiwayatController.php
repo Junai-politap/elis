@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dosen;
 
 use App\Http\Controllers\Controller;
+use App\Models\Penelitian;
 use Illuminate\Http\Request;
 
 class RiwayatController extends Controller
@@ -12,7 +13,8 @@ class RiwayatController extends Controller
      */
     public function index()
     {
-        //
+        $data['list_penelitian'] = Penelitian::where('status', '2')->get();
+        return view('dosen.penelitian.riwayat.index', $data);
     }
 
     /**

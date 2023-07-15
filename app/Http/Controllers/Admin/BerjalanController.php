@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Berjalan;
+use App\Models\Penelitian;
 use Illuminate\Http\Request;
 
 class BerjalanController extends Controller
@@ -13,7 +13,13 @@ class BerjalanController extends Controller
      */
     public function index()
     {
-        $data['list_berjalan'] = Berjalan::latest()->get();
+        $data['list_penelitian'] = Penelitian::where('status', '2')->get();
+        return view('admin.penelitian.berjalan.index', $data);
+    }
+
+    public function pengabdianBerjalan()
+    {
+        $data['list_penelitian'] = Penelitian::where('status', '2')->get();
         return view('admin.penelitian.berjalan.index', $data);
     }
 

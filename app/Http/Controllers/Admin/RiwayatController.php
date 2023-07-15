@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Riwayat;
+use App\Models\Penelitian;
 use Illuminate\Http\Request;
 
 class RiwayatController extends Controller
@@ -13,8 +13,8 @@ class RiwayatController extends Controller
      */
     public function index()
     {
-        $data['list_riwayat'] = Riwayat::latest()->get();
-        return view('admin.penelitian.riwayat.index');
+        $data['list_penelitian'] = Penelitian::all();
+        return view('admin.penelitian.berjalan.index', $data);
     }
 
     /**

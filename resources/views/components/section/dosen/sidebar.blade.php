@@ -50,25 +50,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{url('dosen/usulanbaru')}}" class="nav-link">
+                        <a href="{{url('dosen/penelitian')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Usulan Baru</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('dosen/berjalan')}}" class="nav-link">
+                        <a href="{{url('dosen/penelitian-berjalan')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Penelitian Aktif</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('dosen/selesai')}}" class="nav-link">
+                        <a href="{{url('dosen/penelitian-selesai')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Penelitian Selesai</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('dosen/riwayat')}}" class="nav-link">
+                        <a href="{{url('dosen/penelitian-riwayat')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Riwayat Usulan</p>
                         </a>
@@ -85,25 +85,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{ url('dosen/usulan_baru') }}" class="nav-link">
+                        <a href="{{ url('dosen/pengabdian-berjalan') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Usulan Baru</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('dosen/berjalan_') }}" class="nav-link">
+                        <a href="{{ url('dosen/pengabdian-aktif') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Pengabdian Aktif</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('dosen/selesai_') }}" class="nav-link">
+                        <a href="{{ url('dosen/pengabdian-selesai') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Pengabdian Selesai</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('dosen/riwayat_') }}" class="nav-link">
+                        <a href="{{ url('dosen/pengabdian-riwayat') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Riwayat Selesai</p>
                         </a>

@@ -49,25 +49,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{url('admin/usulanbaru')}}" class="nav-link">
+                        <a href="{{url('admin/penelitian')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Usulan Baru</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('admin/berjalan')}}" class="nav-link">
+                        <a href="{{url('admin/penelitian-berjalan')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Penelitian Aktif</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('admin/selesai')}}" class="nav-link">
+                        <a href="{{url('admin/penelitian-selesai')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Penelitian Selesai</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{url('admin/riwayat')}}" class="nav-link">
+                        <a href="{{url('admin/penelitian-riwayat')}}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Riwayat Penelitian</p>
                         </a>
@@ -84,25 +84,25 @@
                 </a>
                 <ul class="nav nav-treeview">
                     <li class="nav-item">
-                        <a href="{{ url('admin/usulan_baru') }}" class="nav-link">
+                        <a href="{{ url('admin/pengabdian') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Usulan Baru</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('admin/berjalan_') }}" class="nav-link">
+                        <a href="{{ url('admin/pengabdian-berjalan') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Pengabdian Aktif</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('admin/selesai_') }}" class="nav-link">
+                        <a href="{{ url('admin/pengabdian-selesai') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Pengabdian Selesai</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ url('admin/riwayat_') }}" class="nav-link">
+                        <a href="{{ url('admin/pengabdian-riwayat') }}" class="nav-link">
                             <i class="far fa-circle nav-icon" style="color: white"></i>
                             <p style="color: white">Riwayat Pengabdian</p>
                         </a>

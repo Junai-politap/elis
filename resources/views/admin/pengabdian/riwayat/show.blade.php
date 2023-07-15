@@ -1,4 +1,4 @@
-<x-dosen>
+<x-app>
 
     <div class="container">
         <div class="card-header">
@@ -183,4 +183,4 @@
     </div>
 </div>
 
-</x-dosen>
+</x-app>

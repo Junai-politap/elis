@@ -58,7 +58,7 @@ class ProfilController extends Controller
         $pegawai->institusi = request('institusi');
         $pegawai->program_studi = request('program_studi');
         $pegawai->jenjang_pendidikan = request('jenjang_pendidikan');
-        $pegawai->jabatan_akademik	 = request('jabatan_akademik	');
+        $pegawai->jabatan_akademik = request('jabatan_akademik');
         $pegawai->alamat = request('alamat');
         $pegawai->bidang_keahlian = request('bidang_keahlian');
         $pegawai->handleUploadPoto();

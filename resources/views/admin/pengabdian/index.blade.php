@@ -24,22 +24,22 @@
                                     $no = 1;
                                 @endphp
                                 <tbody>
-                                    @foreach ($list_penelitian as $penelitian)
+                                    @foreach ($list_pengabdian as $pengabdian)
                                         
                                             <tr>
                                                 <td>{{ $no++ }}</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <a href="{{ url('admin/penelitian/berjalan', $penelitian->id) }}"
+                                                        <a href="{{ url('admin/pengabdian/berjalan', $pengabdian->id) }}"
                                                             class="btn btn-info"><i class="fas fa-eye"></i> Lihat</a>
                                                     </div>
                                                 </td>
                                                 <td>
                                                     <div class="btn btn-success" for="">Didanai</div>
                                                 </td>
-                                                <td>{{ $penelitian->pegawai->nama }}</td>
-                                                <td>{{ $penelitian->judul_penelitian }}</td>
-                                                <td>{{ $penelitian->created_at }}</td>
+                                                <td>{{ $pengabdian->pegawai->nama }}</td>
+                                                <td>{{ $pengabdian->judul_pengabdian }}</td>
+                                                <td>{{ $pengabdian->created_at }}</td>
                                             </tr>
                                         
                                     @endforeach

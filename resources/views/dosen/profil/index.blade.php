@@ -13,7 +13,7 @@
                             <h1>Data Profil</h1>
                             <div class="text-center">
                                 <hr>
-                                <img class="profile-user-img img-fluid img-circle"
+                                <img class="profile-user-img"
                                     src="{{ url('public', Auth::guard('dosen')->user()->foto) }}"
                                     onerror="this.src='https://bootdey.com/img/Content/avatar/avatar7.png';"
                                     alt="User profile picture">

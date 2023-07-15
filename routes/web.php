@@ -23,9 +23,3 @@ Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 include "_/admin.php";
 include "_/dosen.php";
 
-// Route::group(['middleware' => ['auth', 'ceklevel:admin']], function() {
-//     include "_/admin.php";
-// });
-// Route::group(['middleware' => ['auth', 'ceklevel:dosen']], function() {
-//     include "_/dosen.php";
-// });

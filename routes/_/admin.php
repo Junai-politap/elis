@@ -1,15 +1,10 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\Berjalan_Controller;
 use App\Http\Controllers\Admin\BerjalanController;
 use App\Http\Controllers\Admin\PegawaiController;
-use App\Http\Controllers\Admin\Riwayat_Controller;
-use App\Http\Controllers\Admin\RiwayatController;
-use App\Http\Controllers\Admin\Selesai_Controller;
-use App\Http\Controllers\Admin\SelesaiController;
-use App\Http\Controllers\Admin\Usulan_baruController;
-use App\Http\Controllers\Admin\UsulanbaruController;
+use App\Http\Controllers\Admin\PenelitianController;
+use App\Http\Controllers\Admin\PengabdianController;
 use Illuminate\Support\Facades\Route;
 
 Route::group(['middleware' => 'auth:admin'], function () {
@@ -18,17 +13,31 @@ Route::group(['middleware' => 'auth:admin'], function () {
         Route::get('/', [AdminController::class, 'dashboard']);
         Route::resource('admin', AdminController::class);
         Route::resource('pegawai', PegawaiController::class);
-        Route::resource('usulanbaru', UsulanbaruController::class);
-        Route::resource('berjalan', BerjalanController::class);
-        Route::resource('selesai', SelesaiController::class);
-        Route::resource('riwayat', RiwayatController::class);
+        
 
-        Route::get('lanjutan/{penelitian_usulanbaru}', [UsulanBaruController::class, 'lanjutan']);
+        Route::get('penelitian', [PenelitianController::class,'index']);
+        Route::get('penelitian/{penelitian}', [PenelitianController::class,'show']);
+        Route::put('penelitian/update-status/{penelitian}', [PenelitianController::class, 'status']);
 
-        Route::resource('usulan_baru', Usulan_baruController::class);
-        Route::resource('berjalan_', Berjalan_Controller::class);
-        Route::resource('selesai_', Selesai_Controller::class);
-        Route::resource('riwayat_', Riwayat_Controller::class);
+        Route::get('penelitian-berjalan', [BerjalanController::class, 'index']);
+
+        Route::get('penelitian-selesai', [BerjalanController::class, 'index']);
+
+        Route::get('penelitian-riwayat', [BerjalanController::class, 'index']);
+
+
+
+        Route::get('pengabdian', [PengabdianController::class,'index']);
+        Route::get('pengabdian/{pengabdian}', [PengabdianController::class,'show']);
+        Route::put('pengabdian/update-status/{pengabdian}', [PengabdianController::class, 'status']);
+
+        Route::get('pengabdian-berjalan', [BerjalanController::class, 'index']);
+
+        Route::get('pengabdian-selesai', [BerjalanController::class, 'index']);
+
+        Route::get('pengabdian-riwayat', [BerjalanController::class, 'index']);
+        
+
 });
 
 });

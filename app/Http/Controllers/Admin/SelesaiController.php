@@ -3,8 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Berjalan;
-use App\Models\Selesai;
+use App\Models\Penelitian;
 use Illuminate\Http\Request;
 
 class SelesaiController extends Controller
@@ -14,8 +13,8 @@ class SelesaiController extends Controller
      */
     public function index()
     {
-        $data['list_selesai'] = Selesai::latest()->get();
-        return view('admin.penelitian.selesai.index', $data);
+        $data['list_penelitian'] = Penelitian::all();
+        return view('admin.penelitian.berjalan.index', $data);
     }
 
     /**
